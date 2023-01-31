@@ -1,0 +1,63 @@
+<!--
+    Atributos Globais mais utilizados
+
+    - class:
+        É uma lista separada pelo espaço das classes do elemento. como classes permitem ao CSS e ao JavaScript selecionar e acessar elementos
+        específicos atraves dos seletores de classe ou funciona como um método Document.getElementsByClassName().
+    
+    - contenteditable:
+        É um atributo enumerado que indica se o elemento deve ser editado pelo usuário. Se assim for, o navegador modifica seu widget para permitir a edição. O atributo deve ter um dos seguintes valores:
+        true ou uma sequência vazia, indica que o elemento deve ser editável;
+        false, indica que o elemento não deve ser editável.
+
+    - data-*:
+        Forma uma classe de atributos, denominado de dados personalizados, que permite troca de informações proprietárias entre o HTML e a sua representação no DOM pode ser usada por roteiros. 
+        Todos esses dados personalizados estão disponíveis da interface do elemento HTMLElement em que o atributo está definido. A propriedade HTMLElement.dataset dá acesso a eles.
+    
+    - hidden:
+        Um atributo booleano indica que o elemento ainda não é relevante ou não é mais relevante. 
+        Por exemplo, ele pode ser usado para ocultar elementos da página que não podem ser usados até que o processo de login tenha sido concluído. 
+        O navegador não renderizará esses elementos. Este atributo não deve ser usado para ocultar conteúdo que poderia ser legível.
+    
+    - id:
+        Defina um identificador exclusivo (ID) que deve ser único em todo o documento.
+        Seu objetivo é identificar o elemento ao vincular (usando um identificador de fragmento), um script ou estilo (com CSS).
+    
+    
+    - style:
+        Contém regras de declarações CSS para aplicar no elemento. 
+        Note que é recomendado que as regras CSS fiquem num arquivo, ou vários arquivos, separado do HTML. Este atributo e o elemento <style> tem principalmente o propósito para rápida estilização do elemento, como por exemplo para testes.
+    
+    
+    - tabindex:
+        É um atributo que recebe valores inteiros e indica se um elemento pode receber o foco de entrada de valores (é focável), se ele deve entrar na sequência navegação da teclado (através da tecla TAB), e qual posição da sequência. Sobre seus valores:
+        
+        - um valor negativo indica que o elemento é focável, mas não é alcançável pela navegação do teclado (através da tecla TAB);
+        - 0 indica que o elemento é focável e alcançavel pela navegação sequencial do teclado, mas sua ordem de seleção relativa é definida pela convenção da plataforma (ou do navegador);
+        - um valor positivo indica que o elemento é focável e alcançável pela navegação sequencial do teclado; sua ordem de seleção relativa é definido pelo valor colocado: a sequência segue em ordem crescente definida no . Se vários elementos possuem o mesmo valor de , sua ordem relativa é estabelecida pela posição relativa no documento HTML.tabindextabindex
+    
+    
+    - title:
+        Contém um texto representativo sobre a informação relacionada ao elemento ao qual este atributo pertence. 
+        Tal informação pode, mas não necessariamente, ser apresentado através de uma dica de ferramenta.
+-->
+
+<div class="carrinho" contenteditable="true">
+    permite editar o texto
+</div>
+
+<div class="carrinho" data-id="" id="name" style="color: blueviolet;">
+    id só pode ser usado em um, style é para estilização da pagina e data-* definir os tipos de dados quando usar lógica
+</div>
+
+<div class="carrinho" hidden>
+    esconde o conteúdo
+</div>
+
+<div class="carrinho" tabindex="1">
+    define o que vai ser selecionado primeiro ou na ordem que vc quiser
+</div>
+
+<div title="definir um titulo">
+</div>
+

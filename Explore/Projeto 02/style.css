@@ -1,13 +1,14 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-
+  min-height: 100vh;
   background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
 }
 
 .container {
   width: 1000px;
-  margin: 65px auto 0;
+  margin: 0 auto 0;
+  padding-top: 65px ;
 }
 
 nav {
@@ -31,8 +32,12 @@ h1, ul {
   color: #1f1534;
 }
 
+ul li a {
+  opacity: 0.5;
+}
 ul li a:hover {
   font-weight: bold;
+  opacity: 1;
 }
 
 a {
@@ -97,6 +102,11 @@ button {
 }
 
 button:hover {
-  background-color: #538e79;
+  background-color: #538e79; 
 }
 
+.balls {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
